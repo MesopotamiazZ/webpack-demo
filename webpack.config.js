@@ -18,12 +18,20 @@ module.exports = {
   module: { // 依赖的loader
     rules: [
       {
-        test: /\.css$/,
-        use: [
-          'style-loader', // css格式化
+        test:/\.css$/,
+        use:[
+          'style-loader',
           'css-loader'
-        ],
+        ]
       },
+      // {
+      //   test: /\.(scss|sass)$/,
+      //   use: [
+      //     // 'style-loader', // css格式化
+      //     'css-loader',
+      //     'sass-loader'
+      //   ],
+      // },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
